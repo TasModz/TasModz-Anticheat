@@ -1,6 +1,6 @@
 ### About TasifyAntiCheat
 
-AntiCheat by andripwn is a resource created for FiveM. This resource is to detect hackers and ban them from your server.
+AntiCheat created andripwn is a resource for FiveM edited by TasModz. This resource is to detect hackers and ban them from your server.
 
 ⚠️ Not following all the instructions will result in a possible ban, this resource cannot work correctly without proper installation.
 Also, using this resource is at your own risk and is not a magical resource that will stop all hackers.
