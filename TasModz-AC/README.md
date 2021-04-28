@@ -1,13 +1,4 @@
-# FiveM AntiCheat by andripwn
-
-[![Thymon](https://i.imgur.com/3EquTNl.jpg)](http://www.pwn0day.com)
-
-[![Developer](https://img.shields.io/badge/Developer-andripwnDevelopment-darkgreen)](https://github.com/andripwn)
-[![Discord](https://img.shields.io/badge/Discord-andripwn%239999-purple)](https://discord.gg/PCYX4KN)
-[![Version](https://img.shields.io/badge/Version-1.0.0-darkgreen)](https://github.com/andripwn/FiveM-AntiCheat-Fixed/blob/master/version)
-[![Version](https://img.shields.io/badge/License-MIT-darkgreen)](https://github.com/andripwn/FiveM-AntiCheat-Fixed/blob/master/LICENSE)
-
-### About andripwnAntiCheat
+### About TasifyAntiCheat
 
 AntiCheat by andripwn is a resource created for FiveM. This resource is to detect hackers and ban them from your server.
 
@@ -57,8 +48,8 @@ As long as `esx` is changed to something else
 ⚠️ You should rename it or take it out of the list. If you don't do this, your players will be banned.
 ⚠️ Everything that your scripts called and is listed here, must be renamed or removed from the list
 
-[![Client List](https://img.shields.io/badge/Client%20List-fake_events.lua-blue)](https://github.com/andripwnDevelopment/andripwnAntiCheat/blob/master/client/anticheat/fake_events.lua)
-[![Server List](https://img.shields.io/badge/Server%20List-fake_events.lua-red)](https://github.com/andripwnDevelopment/andripwnAntiCheat/blob/master/server/anticheat/fake_events.lua)
+[![Client List](https://img.shields.io/badge/Client%20List-fake_events.lua-blue)](https://github.com/andripwnDevelopment/TasifyAntiCheat/blob/master/client/anticheat/fake_events.lua)
+[![Server List](https://img.shields.io/badge/Server%20List-fake_events.lua-red)](https://github.com/andripwnDevelopment/TasifyAntiCheat/blob/master/server/anticheat/fake_events.lua)
 
 Event perfix | Example event
 :-------------|:--------------
@@ -142,7 +133,7 @@ Event perfix | Example event
 ### Enable `/anticheat` for players
 If you want `/anticheat` command available for example your Admin's than you can add this line to your `server.cfg`
 ```cfg
-add_ace group.admin andripwnanticheat.commands allow
+add_ace group.admin TasifyAntiCheat.commands allow
 ```
 Console is always allowed to execute `/anticheat` command.
 Use `/anticheat` or `/anticheat help` to show all available commands.
@@ -151,7 +142,7 @@ Use `/anticheat` or `/anticheat help` to show all available commands.
 If you have players like Admin's who should never be banned, you should add the following to their group
 ⚠️ You have to add these to the group of people who are allowed to use spectates, noclip, godmode, and other bannable functionalities.
 ```cfg
-add_ace group.admin andripwnanticheat.bypass allow
+add_ace group.admin TasifyAntiCheat.bypass allow
 ```
 
 ### Server.cfg
@@ -159,15 +150,15 @@ A number of variables must be added in your `server.cfg`
 
 Code | Values | Type
 :---|:---|:---:
-`set andripwnanticheat.godmode true` | `true` Check and ban players if godmode has been detected | `boolean`
-`set andripwnanticheat.updateidentifiers true` | `true` If a player is banned and joined with new identifiers, those identifiers will banned immediately. | `boolean`
-`set andripwnanticheat.bypassenabled false` | `true` All players with `andripwnanticheat.bypass` will not be checked or banned. | `boolean`
-`set andripwnanticheat.webhook "https://discordapp.com/api/webhooks/.../..."` | Webhook url from discord to log bans there | `string`
-`set andripwnanticheat.VPNCheck` | `true` If VPN check needs to be enabled, `false` If VPN check needs to be disabled | `boolean`
-`set andripwnanticheat.VPNKey "UXZyszcyjZ8KYQeDPyfUTs83mj2Nagdd9EVWWtVSk9GJEHpZne=="` | The API key you have from [IPHub](https://iphub.info/) - https://iphub.info/ | `string`
+`set TasifyAntiCheat.godmode true` | `true` Check and ban players if godmode has been detected | `boolean`
+`set TasifyAntiCheat.updateidentifiers true` | `true` If a player is banned and joined with new identifiers, those identifiers will banned immediately. | `boolean`
+`set TasifyAntiCheat.bypassenabled false` | `true` All players with `TasifyAntiCheat.bypass` will not be checked or banned. | `boolean`
+`set TasifyAntiCheat.webhook "https://discordapp.com/api/webhooks/.../..."` | Webhook url from discord to log bans there | `string`
+`set TasifyAntiCheat.VPNCheck` | `true` If VPN check needs to be enabled, `false` If VPN check needs to be disabled | `boolean`
+`set TasifyAntiCheat.VPNKey "UXZyszcyjZ8KYQeDPyfUTs83mj2Nagdd9EVWWtVSk9GJEHpZne=="` | The API key you have from [IPHub](https://iphub.info/) - https://iphub.info/ | `string`
 
 ### VPN Checker
-Because hackers often use a VPN or change their IP after being banned from the server, there is a VPN blocker in andripwnAntiCheat. This VPN blocker use information from [IPHub](https://iphub.info/). To use this VPN blocker you must create an account on [IPHub](https://iphub.info/) and create a (free) API Key. After creating an account, you get 1.000 requests every day for free, if you use more then a 1.000 every day then you need to upgrade your free API, you will get charged for this. andripwnAntiCheat has a built-in IP cache, which means that it stores all IPs from the earlier request. The cache is completely empty after restarting the server or andripwnAntiCheat resource himself.
+Because hackers often use a VPN or change their IP after being banned from the server, there is a VPN blocker in TasifyAntiCheat. This VPN blocker use information from [IPHub](https://iphub.info/). To use this VPN blocker you must create an account on [IPHub](https://iphub.info/) and create a (free) API Key. After creating an account, you get 1.000 requests every day for free, if you use more then a 1.000 every day then you need to upgrade your free API, you will get charged for this. TasifyAntiCheat has a built-in IP cache, which means that it stores all IPs from the earlier request. The cache is completely empty after restarting the server or TasifyAntiCheat resource himself.
 
 ### License
 MIT License
@@ -195,4 +186,4 @@ SOFTWARE.
 
 ### Disclamer
 ---
-This resource was created by me with all the knowledge at the time of writing. It doesn't mean cheating becomes impossible. Updates will be done if there are time and reason to do so. The request for new functionality is allowed but it does not mean that it will be released.
+This resource was created by 	 with all the knowledge at the time of writing. It doesn't mean cheating becomes impossible. Updates will be done if there are time and reason to do so. The request for new functionality is allowed but it does not mean that it will be released.
